@@ -262,7 +262,6 @@ Bg3.addEventListener('click', () => {
 
 const ColorArray = [
   "#bf382c", //red
-  "#e7eca3", //yellow
   "#ec6831", //orange
   "#a4c5ea", //cyan
   "#008080", // blue
