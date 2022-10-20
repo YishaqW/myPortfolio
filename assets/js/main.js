@@ -259,3 +259,22 @@ Bg3.addEventListener('click', () => {
   Bg1.classList.remove('active');
   changeBG();
 })
+
+const ColorArray = [
+  "#bf382c", //red
+  "#e7eca3", //yellow
+  "#ec6831", //orange
+  "#a4c5ea", //cyan
+  "#008080", // blue
+  "#857463", // gray
+  "#86b49c", //teal
+  "#9de19a", //green
+  "#bca9e1", //purple
+  "#98a7f2", //violet
+];
+
+// Color Generator for Body Background
+let randColor = ColorArray[Math.floor(Math.random() * ColorArray.length)];
+
+  const body = document.querySelector("body");
+  body.style.backgroundColor = randColor;
