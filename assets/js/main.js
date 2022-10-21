@@ -275,5 +275,8 @@ const ColorArray = [
 // Color Generator for Body Background
 let randColor = ColorArray[Math.floor(Math.random() * ColorArray.length)];
 
-  const body = document.querySelector("body");
-  body.style.backgroundColor = randColor;
+  // const body = document.querySelector("body");
+  // body.style.backgroundColor = randColor;
+
+  const Nheader = document.getElementsByClassName(".header")
+  header.style.backgroundColor= randColor;
