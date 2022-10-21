@@ -2,6 +2,25 @@ const navMenu = document.getElementById("nav-menu"),
       navToggle = document.getElementById("nav-toggle"),
       navClose = document.getElementById("nav-close")
 
+let navName = document.querySelector('.nav-logo')
+console.log(navName)
+navName.textContent = 'Hi'
+
+// ====Name Animation====//
+// let welcomeText = document.querySelector('.welcome-text')
+// let displayText = welcomeText.textContent
+// let splitText = Array.from(displayText)
+const guestBox = document.querySelector('.guest-text')
+
+const getGuest = () => {
+  let guestInput = guestBox.value
+  console.log(guestInput)
+  navName.textContent = (`Hi, ${guestInput}`) 
+  guestBox.value = ''
+}
+
+const enterBtn = document.getElementById('enterBtn')
+enterBtn.addEventListener('click', getGuest)
 /*=============== SHOW MENU ===============*/
 /* validate if constant exists  */
 if(navToggle)
@@ -262,11 +281,11 @@ Bg3.addEventListener('click', () => {
 
 // =========form function=========== //
 
-const formBtn = document.getElementsByClassName(".formBtn")
-const email = () => {
+// const formBtn = document.getElementsByClassName(".formBtn")
+// const email = () => {
 
-  formBtn.addEventListener('click', email)
-  alert('email has been sent, Thank you!')
-}
+//   formBtn.addEventListener('click', email)
+//   alert('email has been sent, Thank you!')
+// }
 
-email()
+// email()
