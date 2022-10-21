@@ -774,7 +774,7 @@
       font-size: 1.6rem;
       display: block;
       background: var(--color-primary);
-      height: 2rem;
+      height: 1.7rem;
       width: 2.5rem;
       cursor: pointer;
       border-radius: 50%;
@@ -992,7 +992,7 @@
     .contact-input
     {
       position: absolute;
-      top: 0;
+      top: 15px;
       left: 0;
       width: 100%;
       height: 100%;

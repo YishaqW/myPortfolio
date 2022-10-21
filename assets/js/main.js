@@ -260,23 +260,13 @@ Bg3.addEventListener('click', () => {
   changeBG();
 })
 
-const ColorArray = [
-  "#bf382c", //red
-  "#ec6831", //orange
-  "#a4c5ea", //cyan
-  "#008080", // blue
-  "#857463", // gray
-  "#86b49c", //teal
-  "#9de19a", //green
-  "#bca9e1", //purple
-  "#98a7f2", //violet
-];
+// =========form function=========== //
 
-// Color Generator for Body Background
-let randColor = ColorArray[Math.floor(Math.random() * ColorArray.length)];
+const formBtn = document.getElementsByClassName(".formBtn")
+const email = () => {
 
-  // const body = document.querySelector("body");
-  // body.style.backgroundColor = randColor;
+  formBtn.addEventListener('click', email)
+  alert('email has been sent, Thank you!')
+}
 
-  const Nheader = document.getElementsByClassName(".header")
-  header.style.backgroundColor= randColor;
+email()
